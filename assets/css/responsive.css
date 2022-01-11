@@ -1,0 +1,154 @@
+/* Break Point */
+/* PC */
+@media (min-width: 64em){
+    /* CSS trong này chỉ chạy khi nằm trong độ rộng tối đa (0 <= x <= 800). min-width thì ngược lại, tối thiểu mới chạy (x >= 800)*/
+    .contact-submit-btn{
+        font-size: 16px;
+        color: #fff;
+        background-color: #000;
+        text-decoration: none;
+        padding: 11px 16px;
+        display: inline-block;
+        margin-top: 15px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        appearance: none;
+        -webkit-perspective: none; /* chủ yếu dùng cái này để set cho safari trên iphone */
+    }
+
+    .contact-submit-btn:hover{
+        background-color: #ccc;
+        color: #000;
+    }
+}
+
+
+/* Tablet and Mobile */
+@media(max-width: 63.9375em){
+    .btn{
+        padding: 15px 16px;
+    }
+
+    #nav .sub-nav a{
+        padding: 5px 12px;
+    }
+
+    .contact-form .form-control{
+        padding: 15px;
+        font-size: 16px;
+    }
+    
+    
+    .contact-info{
+        line-height: 2px;
+    }
+
+    .contact-submit-btn{
+        font-size: 16px;
+        color: #fff;
+        background-color: #000;
+        text-decoration: none;
+        padding: 11px 16px;
+        display: inline-block;
+        margin-top: 15px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        appearance: none;
+        -webkit-perspective: none; /* chủ yếu dùng cái này để set cho safari trên iphone */
+    }
+
+    .contact-submit-btn:hover{
+        background-color: #ccc;
+        color: #000;
+    }
+
+    .socials-list{
+        font-size: 48px;
+    }
+
+    #footer .socials-list{
+        margin: 0 8px;
+    }
+
+    #footer .copyright-list a{
+        padding: 12px 0;
+        display: inline-block;
+    }
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    /* vì trên tablet là 740 <= x < 1024 */
+    .contact-info{
+        line-height: 30px;
+        margin: 24px 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em){
+    /* mobile là x < 740 */
+    .s-full-width,
+    .s-col-full{
+        width: 100% !important;
+    }
+
+    .s-mt-8{
+        margin-top: 8px !important;
+    }
+
+    #header{
+        overflow: hidden;
+    }
+
+    #header .mobile-menu-btn{
+        display: block;
+    }
+
+    #header .search-btn{
+        display: block;
+    }
+    
+    #nav{
+        display: block;
+    }
+
+    #nav > li{
+        display: block;
+    }
+
+    #nav > li:first-child{
+        display: inline-block;
+    }
+
+    #nav li a{
+        padding: 1px 24px;
+    }   
+
+    #nav .subnav{
+        position: initial; /* Set về giá trị mặc định, bỏ qua absolute */ 
+        background-color: #333;
+    }
+
+    #nav .subnav a{
+        color: #fff;
+        padding: 5px 41px; /*tối thiểu 42 -> 48px thì nó mới đồng nhất với ngón tay nên mới là 5px */
+    }
+
+    #content .member-img{
+        width: 60%;
+    }
+
+    .contact-info{
+        margin: 24px 0;
+        line-height: 30px;
+    }
+
+    .contact-form{
+        margin-top: 32px;
+    }
+}
